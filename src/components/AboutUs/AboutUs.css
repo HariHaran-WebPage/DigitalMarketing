@@ -1,0 +1,89 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #a4e2f2;
+  font-family: "Arial", sans-serif;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(84, 84, 142);
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.about-carousel {
+  flex: 1;
+  margin-right: 100px;
+  max-width: 50%;
+}
+
+.about-image {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.2em;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-carousel {
+    margin-right: 0;
+    max-width: 80%;
+  }
+
+  .about-text {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2em;
+  }
+
+  .about-text p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 1.5em;
+  }
+
+  .about-text p {
+    font-size: 0.9em;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+}
